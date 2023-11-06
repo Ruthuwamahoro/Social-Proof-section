@@ -135,8 +135,11 @@ body {
 }
 @media (max-width:375px){
    body {
-    
     font-size: 20px;
+    
+    box-sizing: border-box;
+    background: #fafbfc;
+
    }
    .card-1{
     display: grid;
@@ -145,15 +148,24 @@ body {
    .card-intro {
     width: 100%;
    }
-   .card-container {
+   /* .card-container {
     display: grid;
-    grid-template-columns: 1fr;
-   }
-   .card-item {
+    grid-template-columns: 2fr;
+    padding: 0;
+
+
+   } */
+   /* .card-item {
     position: relative;
     right: 60px;
     width: 300px;
+    font-size: 17px;
+    
+   } */
+   .card-container {
+    
    }
+
    .card-rate-item:nth-of-type(2) {
     position: relative;
     }
@@ -161,16 +173,10 @@ body {
         width: 100%
     }
     .rating {
-        /* max-width: 375px; */
         width: 100%;
-        
         font-size: 20px;
-        
-        
-
     }
     .card-rate-item {
-        /* max-width: 375px; */
         width: 100%;
         height: 90px;
 
@@ -220,6 +226,9 @@ body {
     .intro1 {
         margin-bottom: 30px;
     }
+    .card-item:nth-of-type(3){
+        margin-bottom: 100px;
+    }
 }
 
 @media (max-width: 768px) {
@@ -231,6 +240,7 @@ body {
         display: grid;
         grid-template-columns: 1fr;
         width: 100%;
+        margin: 0 auto;
        
         
        }
@@ -243,8 +253,10 @@ body {
        }
        .card-item {
         position: relative;
+        /* right: 60px; */
         right: 60px;
-        width: 400px;
+        /* width: 400px; */
+        width: 135%
        }
        .card-rate-item:nth-of-type(2) {
         position: relative;
@@ -263,17 +275,20 @@ body {
         .card-rate-item {
             /* max-width: 375px; */
             width: 100%;
-            height: 90px;
+            /* height: 90px; */
     
         }
         
         .rating .star {
             font-size: 20px;
         }
+        
+        
     
         .card-rate-item {
             margin-top: 30px;
-            width: 300px;
+            /* width: 300px; */
+            width: 100%;
             padding-top: 10px;
             
         }
@@ -287,7 +302,9 @@ body {
         .card-rate-item:nth-of-type(3) {
             width: 300px;
             position: relative;
-            left: 0px
+            /* left: 0px */
+            left: 0;
+            text-align: center;
             
         }
     
